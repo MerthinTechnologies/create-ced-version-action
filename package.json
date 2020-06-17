@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@actions/core": "^1.2.4",
-    "@ced/cli-dev": "^1.0.35-dev"
+    "@ced/cli": "^1.0.36"
   },
   "devDependencies": {
     "@types/node": "^13.1.2",

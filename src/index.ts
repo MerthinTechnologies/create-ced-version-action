@@ -1,5 +1,5 @@
 import * as core from '@actions/core';
-import { CreateVersionCommandHandler } from '@ced/cli-dev';
+import { CreateVersionCommandHandler } from '@ced/cli';
 
 const run = async function() {
   try {
