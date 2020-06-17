@@ -5,7 +5,7 @@ inputs:
     description: 'CloudEdgeDistribution CLI token'
     required: true
   environment:
-    description: 'Environment to use in CloudEdgeDistribution, it'll use the default environment in ced.json if it isn't specified.'
+    description: "Environment to use in CloudEdgeDistribution, it'll use the default environment in ced.json if it isn't specified."
     required: false
   path:
     description: 'Path to the CloudEdgeDistribution project, default is current folder.'
