@@ -12,6 +12,10 @@ Github Action to create an empty version within a CloudEdgeDistribution project.
 
 Environment to use in CloudEdgeDistribution, if not specified will use the default environment in ced.json
 
+### `path`
+
+Path to the CloudEdgeDistribution project, default is current folder.
+
 ## Output
 
 ### `version`
@@ -24,6 +28,7 @@ Created version name
 - uses: MerthinTechnologies/create-ced-version@v1
   id: create-version
   with:
+    path: ${{ env.PROJECT_FOLDER }}
     cli-token: ${{ secrets.CED_CLI_TOKEN }}
     environment: 'production'
 - name: Get the output version
