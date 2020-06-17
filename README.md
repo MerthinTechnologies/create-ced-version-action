@@ -25,7 +25,7 @@ Created version name
 ## Example usage
 
 ```yaml
-- uses: MerthinTechnologies/create-ced-version@v1
+- uses: MerthinTechnologies/create-ced-version-action@v1
   id: create-version
   with:
     path: ${{ env.PROJECT_FOLDER }}
