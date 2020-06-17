@@ -1,0 +1,15 @@
+name: 'Create CED version'
+description: 'Github action to create an empty version within a CloudEdgeDistribution project'
+inputs:
+  cli-token:
+    description: 'CloudEdgeDistribution CLI token'
+    required: true
+  environment:
+    description: 'Environment to use in CloudEdgeDistribution, if not specified will use the default environment in ced.json'
+    required: false
+outputs:
+  version: 
+    description: 'Created version name'
+runs:
+  using: 'node12'
+  main: 'lib/index.js'

@@ -1,0 +1,10 @@
+{
+  "projectId": "project1",
+  "defaultEnvironment": "development",
+  "subsystemId": "genericsys",
+  "artifacts": {
+    "development": [
+      "."
+    ]
+  }
+}
