@@ -2,10 +2,9 @@
   "name": "create-ced-version-action",
   "version": "1.0.0",
   "description": "Github Action to create an empty version within a CloudEdgeDistribution project.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
-    "clean": "rm -r ./lib && rm -r node_modules"
+    "build": "tsc && ncc build ./js/index.js -m"
   },
   "author": "Merthin Technologies",
   "license": "ISC",
@@ -15,6 +14,7 @@
   },
   "devDependencies": {
     "@types/node": "^13.1.2",
+    "@zeit/ncc": "^0.22.3",
     "typescript": "^3.7.4"
   }
 }

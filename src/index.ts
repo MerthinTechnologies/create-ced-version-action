@@ -15,6 +15,7 @@ const run = async function() {
     const version = await command.run(environment);
     core.setOutput('version', version);
   } catch (error) {
+    console.log(error);
     core.setFailed(error.message);
   }
 }
