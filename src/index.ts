@@ -25,7 +25,7 @@ const run = async function () {
     console.log(`Using ${path} as working directory`);
   }
 
-  const command = cli(cliToken).push();
+  const command = cli(cliToken).createVersion();
   const version = await command.run(environment);
   core.setOutput('version', version);
 };
